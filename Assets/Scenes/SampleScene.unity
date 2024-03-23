@@ -445,45 +445,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2153037546331093699, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: damperStiffness
-      value: 2200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153037546331093699, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: springStiffness
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3211287861947779555, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: m_ImplicitCom
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3302758653785506980, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: damperStiffness
-      value: 2200
-      objectReference: {fileID: 0}
-    - target: {fileID: 3302758653785506980, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: springStiffness
-      value: 30000
-      objectReference: {fileID: 0}
     - target: {fileID: 5420962505237444639, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 6079413629453347543, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: damperStiffness
-      value: 2200
-      objectReference: {fileID: 0}
-    - target: {fileID: 6079413629453347543, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: springStiffness
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7169959338363190958, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: damperStiffness
-      value: 2200
-      objectReference: {fileID: 0}
-    - target: {fileID: 7169959338363190958, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      propertyPath: springStiffness
-      value: 30000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
