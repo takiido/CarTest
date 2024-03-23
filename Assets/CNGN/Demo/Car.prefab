@@ -803,6 +803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restLength: 0.5
   springTravel: 0.2
+  springStiffness: 30000
+  damperStiffness: 2200
   wheelRadius: 0.34
 --- !u!1 &4505394342753259939
 GameObject:
@@ -1072,7 +1074,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1443,6 +1445,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restLength: 0.5
   springTravel: 0.2
+  springStiffness: 30000
+  damperStiffness: 2200
   wheelRadius: 0.34
 --- !u!1 &8695537754346750225
 GameObject:
@@ -1490,6 +1494,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restLength: 0.5
   springTravel: 0.2
+  springStiffness: 30000
+  damperStiffness: 2200
   wheelRadius: 0.34
 --- !u!1 &8727692420152600694
 GameObject:
@@ -1623,4 +1629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restLength: 0.5
   springTravel: 0.2
+  springStiffness: 30000
+  damperStiffness: 2200
   wheelRadius: 0.34

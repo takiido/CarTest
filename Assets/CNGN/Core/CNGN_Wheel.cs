@@ -10,11 +10,15 @@ public class CNGN_Wheel : MonoBehaviour
     public float restLength;
     public float springTravel;
     public float springStiffness;
+    public float damperStiffness;
 
     private float _minLength;
     private float _maxLength;
+    private float _lastLength;
     private float _springLength;
     private float _springForce;
+    private float _springVelocity;
+    private float _damperForce;
 
     private Vector3 _suspensionForce;
 
@@ -33,10 +37,15 @@ public class CNGN_Wheel : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, _maxLength + wheelRadius))
         {
+            _lastLength = _springLength;
             _springLength = hit.distance - wheelRadius;
-
+            _springLength = Mathf.Clamp(_springLength, _minLength, _maxLength);
+            _springVelocity = (_lastLength - _springLength) / Time.fixedDeltaTime;
             _springForce = springStiffness * (restLength - _springLength);
-            _suspensionForce = _springForce * transform.up;
+
+            _damperForce = damperStiffness * _springVelocity;
+            
+            _suspensionForce = (_springForce + _damperForce) * transform.up;
             
             _rb.AddForceAtPosition(_suspensionForce, hit.point);
         }
