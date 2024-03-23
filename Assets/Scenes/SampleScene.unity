@@ -119,126 +119,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &78703309 stripped
+--- !u!1 &396137394 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5420962505237444639, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7418982205019977311, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
   m_PrefabInstance: {fileID: 5895326475591226810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &78703310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!1 &641532836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7503367692901524613, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+  m_PrefabInstance: {fileID: 5895326475591226810}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78703309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8fd9146a5f2275449a300f1fcce0ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontWheels: []
-  wheelBase: 0
-  rearTrack: 0
-  turnRadius: 0
-  steerInput: 0
---- !u!114 &78703311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78703309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: c555c605ffd79a242824b8457d28766e, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 66261b88-4ed1-4f17-ac50-8efd8bf8c729
-    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: af9dd327-4d89-4dfe-9fd1-d518af17de02
-    m_ActionName: 'UI/Submit[/Keyboard/enter]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e46b6637-b407-4468-ac5f-723e4ec8ee4f
-    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: f1667e74-5b7a-4afa-995d-33804c5c66c2
-    m_ActionName: 'UI/Point[/Mouse/position]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a9333299-9cdb-464e-ae8c-2da27c02fbfb
-    m_ActionName: 'UI/Click[/Mouse/leftButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: d44b8303-7590-4e33-8f94-e5e56dc46344
-    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 1f6cab30-0b8e-4bb6-9593-25313739ce17
-    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9322e15a-18f7-407d-9fbe-78673464156f
-    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: afdad118-411f-4167-8418-1b65bcdabf84
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 2581877e-03a8-4e66-aa70-bc5538facef0
-    m_ActionName: UI/TrackedDeviceOrientation
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 78703310}
-        m_TargetAssemblyTypeName: CNGN_Controller, Assembly-CSharp
-        m_MethodName: OnSteer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: c65b28ec-96b6-4874-a222-1f200569e7e1
-    m_ActionName: 'Car/Steer[/Keyboard/a]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c0da2bd2-3f06-4c9b-972b-2be80ac8644d
-    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7357b18c-61a3-4960-bbc7-f103bc251f27
-    m_ActionName: 'Player/Look[/Mouse/delta]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 61c47b34-e35d-4c5c-ab13-62604f5bd64b
-    m_ActionName: 'Player/Fire[/Mouse/leftButton]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Car
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +314,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1001275510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3098903912796240025, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+  m_PrefabInstance: {fileID: 5895326475591226810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653537449
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +412,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1910733403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4505394342753259939, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+  m_PrefabInstance: {fileID: 5895326475591226810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5895326475591226810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -531,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034251077431859378, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 2034251077431859378, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -565,20 +465,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2153037546331093699, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+      propertyPath: wheelModel
+      value: 
+      objectReference: {fileID: 641532836}
+    - target: {fileID: 3302758653785506980, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+      propertyPath: wheelModel
+      value: 
+      objectReference: {fileID: 1910733403}
     - target: {fileID: 5420962505237444639, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 6079413629453347543, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+      propertyPath: wheelModel
+      value: 
+      objectReference: {fileID: 396137394}
+    - target: {fileID: 7169959338363190958, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
+      propertyPath: wheelModel
+      value: 
+      objectReference: {fileID: 1001275510}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3412980181689838098, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5420962505237444639, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 78703311}
-    - targetCorrespondingSourceObject: {fileID: 5420962505237444639, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 78703310}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7850aca47cbdf544fbe2064c2df6e61c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

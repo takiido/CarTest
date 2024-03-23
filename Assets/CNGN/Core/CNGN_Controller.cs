@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class CNGN_Controller : MonoBehaviour
 {
-    public CNGN_Wheel[] frontWheels;
+    public CNGN_Wheel[] wheels;
     
     [Header("Car specs")] 
     public float wheelBase;
@@ -22,15 +22,33 @@ public class CNGN_Controller : MonoBehaviour
     {
         if (steerInput > 0) // Turning right
         {
-            
+            _ackAngleL = Mathf.Rad2Deg * Mathf.Atan(wheelBase / (turnRadius + (rearTrack / 2))) * steerInput;
+            _ackAngleR = Mathf.Rad2Deg * Mathf.Atan(wheelBase / (turnRadius - (rearTrack / 2))) * steerInput;
         }
         else if (steerInput < 0) // Turning left
         {
-
+            _ackAngleL = Mathf.Rad2Deg * Mathf.Atan(wheelBase / (turnRadius - (rearTrack / 2))) * steerInput;
+            _ackAngleR = Mathf.Rad2Deg * Mathf.Atan(wheelBase / (turnRadius + (rearTrack / 2))) * steerInput;
         }
-        else 
+        else
         {
-            
+            _ackAngleL = 0.0f;
+            _ackAngleR = 0.0f;
+        }
+
+        foreach (CNGN_Wheel wheel in wheels)
+        {
+            switch (wheel.type)
+            {
+                case WheelType.FL:
+                    wheel.steerAngle = _ackAngleL;
+                    break;
+                case WheelType.FR:
+                    wheel.steerAngle = _ackAngleR;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
