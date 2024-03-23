@@ -1,6 +1,7 @@
 // Copyright takiido. All Rights Reserved.
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CNGN_Controller : MonoBehaviour
 {
@@ -19,8 +20,6 @@ public class CNGN_Controller : MonoBehaviour
 
     private void Update()
     {
-        steerInput = Input.GetAxis("Horizontal");
-        
         if (steerInput > 0) // Turning right
         {
             
@@ -35,8 +34,8 @@ public class CNGN_Controller : MonoBehaviour
         }
     }
 
-    public void OnSteer()
+    public void OnSteer(InputAction.CallbackContext context)
     {
-        
+        steerInput = context.ReadValue<float>();
     }
 }
