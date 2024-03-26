@@ -6,12 +6,12 @@ using UnityEngine.InputSystem;
 public class CNGN_Controller : MonoBehaviour
 {
     public CNGN_Wheel[] wheels;
-    
-    [Header("Car specs")] 
+
+    [Header("Car specs")]
     public float wheelBase;
     public float rearTrack;
     public float turnRadius;
-    
+
     [Header("Input")]
     public float steerInput;
 
@@ -20,6 +20,7 @@ public class CNGN_Controller : MonoBehaviour
 
     private void Update()
     {
+        // Calculate Ackermann angles for steering
         if (steerInput > 0) // Turning right
         {
             _ackAngleL = Mathf.Rad2Deg * Mathf.Atan(wheelBase / (turnRadius + (rearTrack / 2))) * steerInput;
@@ -36,6 +37,7 @@ public class CNGN_Controller : MonoBehaviour
             _ackAngleR = 0.0f;
         }
 
+        // Apply Ackermann angles to wheels
         foreach (CNGN_Wheel wheel in wheels)
         {
             switch (wheel.type)
@@ -52,6 +54,7 @@ public class CNGN_Controller : MonoBehaviour
         }
     }
 
+    // Method to handle steering input
     public void OnSteer(InputAction.CallbackContext context)
     {
         steerInput = context.ReadValue<float>();
